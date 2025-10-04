@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="Styles/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+</head>
+<body>
+    <section class="rx-home-sec  bg-std" style="background-image: url(images/bg_1.png);">
+        <div class="navbar navbar-hidden">
+            <div class="logo">
+                <h2>ROXANDREA</h2>
+            </div>
+            <div class="hidden-menu">
+                <div class="menu-item">
+                    <a href="index.html" class="menu-link">Home</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#" class="menu-link">Rooms</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#" class="menu-link">About</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#" class="menu-link">Blog</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#" class="menu-link">Restaurant</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#" class="menu-link">Contact</a>
+                </div>
+            </div>
+        </div> 
+        
+    
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-websitename">
+                    ROXANDREA
+                   </div>
+    
+                   <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Rooms</a></li>
+                    <li><a href="#">Restaurant</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    
+                  </ul>
+                
+            </div>
+           
+        </nav>
+        
+       </section>
+
+       <div class="rx-container bg-grey">
+        <h3>Contact Information</h3>
+        <div class="contact-info">
+            <div class="info">
+                <p>Address: 198 West 21th Street, Suite 721 New York NY 10016</p>
+            </div>
+            <div class="info">
+                <p>Phone: + 1235 2355 98</p>
+            </div>
+            <div class="info">
+                <p>Email: info@yoursite.com</p>
+            </div>
+            <div class="info">
+                <p>Website yoursite.com</p>
+            </div>
+        </div>
+
+        <div class="form-page">
+            <form action="#" >
+                <input type="text" placeholder="Name" class="form-control ht">
+                <input type="mail" placeholder="mail" class="form-control ht">
+                <input type="text" placeholder="Subject" class="form-control ht">
+                <textarea name="message" id="message" cols="30" rows="7" placeholder="Message" class="form-control" ></textarea>
+                <button class="send-btn">Send Message</button>
+            </form>
+        </div>
+       </div>
+
+       
+
+
+       <div class="rx-container ft">
+            
+        <div class="f-coloumns">
+         <h2>ROXANDREA</h2>
+         <p class="ft-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+         <div class="ft-social-icon">
+             <div class="ft-ic-div"><a href="">
+                 <span><i class="fa-brands fa-twitter"></i></span>
+             </a></div>
+             <div class="ft-ic-div"><a href="">
+                 <span><i class="fa-brands fa-instagram"></i></span>
+             </a></div>
+             <div class="ft-ic-div">
+                 <a href=""><span><i class="fa-brands fa-facebook"></i></span></a>
+             </div> 
+         </div>
+
+        </div>
+        <div class="f-coloumns ">
+         <h2>Useful Links</h2>
+         <ul>
+             <li><a href="">Blog</a></li>
+             <li><a href="">Rooms</a></li>
+             <li><a href="">Amenities</a></li>
+             <li><a href="">Gift Card</a></li>
+         </ul>
+
+         
+
+        </div>
+        <div class="f-coloumns">
+         <h2>Privacy</h2>
+         <ul>
+             <li><a href="">Carrer</a></li>
+             <li><a href="">Contatct Us</a></li>
+             <li><a href="">About Us</a></li>
+             <li><a href="">Service</a></li>
+         </ul>
+        </div>
+        <div class="f-coloumns">
+         <h2>Having Questions?</h2>
+         <ul>
+             <li>
+                 <span class="ft-icon"><i class="fa-solid fa-location-dot"></i></span>
+                 <span class="ft-text">203 Fake St. Mountain View, San Francisco, California, USA</span>
+             </li>
+             <li><a href="">
+                 <span class="ft-icon"><i class="fa-solid fa-phone"></i></span>
+                 <span class="ft-text">+91 1234556</span>
+             </a></li>
+             <li><a href="">
+                 <span class="ft-icon"><i class="fa-solid fa-envelope"></i></span>
+                 <span class="ft-text">k@gmail.com</span>
+             </a></li>
+             
+         </ul>
+        </div>
+        
+     </div>
+
+
+
+       <script>
+        window.addEventListener("load", function(){
+            var hiddenNav = document.querySelector(".navbar-hidden");
+
+            window.addEventListener("scroll", function(){
+                var h = document.documentElement.scrollTop | document.body.scrollTop;
+
+                if(h > 200){
+                    hiddenNav.classList.add("show");
+                }
+                else{
+                    hiddenNav.classList.remove("show");
+
+                }
+            });
+        });
+        
+    </script>
+</body>
+</html>
